@@ -10,6 +10,10 @@ const options = {
     ],
     adapter: PrismaAdapter(prisma),
     session:{strategy:"jwt"},
+    pages:{
+        signIn:"/login",
+        signOut:"/logout",
+    }
 };
 
 export const{
